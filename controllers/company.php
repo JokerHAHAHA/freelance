@@ -1,5 +1,5 @@
 <?php
-include_once('../twig/lib/Twig/Autoloader.php');
+include_once('../Twig/lib/Twig/Autoloader.php');
 Twig_Autoloader::register();
 
     $loader = new Twig_Loader_Filesystem('../templates'); // Dossier contenant les templates
@@ -7,4 +7,4 @@ Twig_Autoloader::register();
       'cache' => false
       ));
 
-    echo $twig->render('compagny.html.twig');
+    echo $twig->render('company.html.twig');

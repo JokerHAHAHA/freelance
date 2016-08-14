@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../assets/css/global.css">
 
     {# JQUERY #}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
     {# JAVASCRIPT #}
     {# Compiled and minified JavaScript #}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
@@ -25,11 +25,11 @@
     {% block body %}
 
 
-        <div class="navbar-fixed">
+        <div class="navbar-fixed z-depth-5 ">
             <nav>
                 <div class="nav-wrapper">
                     <ul class="left hide-on-med-and-down">
-                        <li><a href="./compagny.php">L'entreprise</a></li>
+                        <li><a href="./company.php">L'entreprise</a></li>
                         <li><a href="./developper.php">Les développeurs</a></li>
                         <li><a href="./projects.php">Nos projets</a></li>
                         <li><a href="./contact.php">Nous Contacter</a></li>
@@ -38,11 +38,36 @@
                 </div>
             </nav>
         </div>
-        
-        <img class="cover" src="../assets/img/cover.jpg" alt="cover image">
 
-        {% block content %} {% endblock %}
-
+        {% block content %}
         {% endblock %}
-    </body>
-    </html>
+
+    {% endblock %}
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
