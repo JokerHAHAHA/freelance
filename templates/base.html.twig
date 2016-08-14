@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../assets/img/logo.jpg" type="image/x-icon" />
+    <title>{% block title %} Rhône Alpes Web Com {% endblock %}</title>
+
+
+    {# CSS #}
+    {# Compiled and minified CSS #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    {# my css #}
+    <link rel="stylesheet" href="../assets/css/global.css">
+
+    {# JQUERY #}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    {# JAVASCRIPT #}
+    {# Compiled and minified JavaScript #}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+</head>
+<body>
+    {% block body %}
+
+
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <ul class="left hide-on-med-and-down">
+                        <li><a href="./compagny.php">L'entreprise</a></li>
+                        <li><a href="./developper.php">Les développeurs</a></li>
+                        <li><a href="./projects.php">Nos projets</a></li>
+                        <li><a href="./contact.php">Nous Contacter</a></li>
+                        <a href="./compagny.php" class="brand-logo right">Web Communication</a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+        <img class="cover" src="../assets/img/cover.jpg" alt="cover image">
+
+        {% block content %} {% endblock %}
+
+        {% endblock %}
+    </body>
+    </html>
