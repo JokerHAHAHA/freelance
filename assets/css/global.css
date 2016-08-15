@@ -3,9 +3,28 @@ html {
     left: 0;
     text-align: center;
     color: white!important;
+    font-family: Indie Flower, cursive;
 }
+/*=======================================================
+framework perso
+=======================================================*/
+.padding-5 {
+    padding: 5%;
+}
+/*=======================================================
+end framework perso
+=======================================================*/
 nav {
     background-color: rgba(22, 174, 166, 0.70);
+}
+nav ul {
+    width: 70%;
+}
+nav li {
+    margin-left: 4%;
+}
+nav a {
+    font-size: 180%!important;
 }
 .brand-logo {
     margin-right: 5%;
@@ -20,9 +39,19 @@ nav {
     background-color: rgba(22, 174, 166, 0.70)!important;
 }
 .section {
+    border-bottom: 20px solid white!important;
+    border-top: 20px solid white!important;
     background-color: rgba(22, 174, 166, 0.70);
 }
 .section1 {
     background-color: transparent;
     color: rgba(22, 174, 166, 1);
+}
+.value {
+    display: inline-block;
+    font-family: Roboto, cursive;
+    color: rgb(22, 174, 166);
+    background-color: #fff;
+    padding: 2%;
+    margin: 3% 5%;
 }
